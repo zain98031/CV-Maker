@@ -1,2 +1,2 @@
 # CV-Maker
-#Developed using JavaFX and Oracle DB
+Developed using JavaFX and Oracle DB
