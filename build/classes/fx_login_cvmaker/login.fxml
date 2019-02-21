@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootan" prefHeight="472.0" prefWidth="930.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_login_cvmaker.loginController">
+   <children>
+      <AnchorPane layoutY="55.0" prefHeight="416.0" prefWidth="932.0" style="-fx-background-color: #e3e3e3;" />
+      <AnchorPane layoutX="126.0" prefHeight="518.0" prefWidth="405.0" style="-fx-background-color: #CE2135;">
+         <children>
+            <ImageView fitHeight="518.0" fitWidth="405.0" pickOnBounds="true" style="-fx-blend-mode: multiply;">
+               <image>
+                  <Image url="@../../../monkey-1.gif" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutY="51.0" prefHeight="411.0" prefWidth="932.0" style="-fx-background-radius: 5em;">
+         <children>
+            <JFXButton layoutY="147.0" onAction="#opensigin" prefHeight="57.0" prefWidth="127.0" ripplerFill="#9f202d" style="-fx-background-color: #372529; -fx-background-radius: 0;" text="Sign In" textFill="#fbfbfb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="209.0" onAction="#opensignup" prefHeight="57.0" prefWidth="127.0" ripplerFill="#9f202d" style="-fx-background-color: #372529; -fx-background-radius: 0;" text="Signup" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="7.0" onAction="#close" prefHeight="32.0" prefWidth="22.0" ripplerFill="#9f202d" text="X" textFill="#372529">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Cancel_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="216.0" layoutY="164.0" text="Welcome To CV Builder" textFill="#fbfbfb">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="286.0" layoutY="204.0" text="UI/Database" textFill="#fbfbfb">
+               <font>
+                  <Font name="Sylfaen" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="78.0" layoutX="307.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resume%20Button_50px.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="signup" layoutX="530.0" prefHeight="416.0" prefWidth="399.0" style="-fx-background-color: #D5CFCF;">
+               <children>
+                  <JFXPasswordField focusColor="#9f202d" labelFloat="true" layoutX="49.0" layoutY="224.0" maxWidth="301.0" minWidth="200.0" prefHeight="40.0" prefWidth="301.0" promptText="Password" unFocusColor="#e58c94">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXTextField focusColor="#9f202d" labelFloat="true" layoutX="52.0" layoutY="102.0" maxWidth="295.0" minWidth="200.0" prefHeight="40.0" prefWidth="295.0" promptText="Username" unFocusColor="#e58c94">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#9f202d" labelFloat="true" layoutX="52.0" layoutY="163.0" maxWidth="295.0" minWidth="200.0" prefHeight="40.0" prefWidth="295.0" promptText="Email" unFocusColor="#e58c94">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="176.0" layoutY="283.0" prefHeight="57.0" prefWidth="51.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Next%20page_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="137.0" layoutY="21.0" text="Sign Up" textFill="#9f202d">
+                     <font>
+                        <Font name="Sylfaen" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signin" layoutX="533.0" layoutY="-1.0" prefHeight="416.0" prefWidth="399.0" style="-fx-background-color: #D5CFCF;">
+               <children>
+                  <JFXTextField focusColor="#9f202d" labelFloat="true" layoutX="56.0" layoutY="107.0" maxWidth="295.0" minWidth="200.0" prefHeight="40.0" prefWidth="295.0" promptText="Username" unFocusColor="#2f3338">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <JFXPasswordField focusColor="#df9a7f" labelFloat="true" layoutX="53.0" layoutY="191.0" maxWidth="301.0" minWidth="200.0" prefHeight="40.0" prefWidth="301.0" promptText="Password" unFocusColor="#9f202d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="170.0" layoutY="255.0" prefHeight="40.0" prefWidth="44.0">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Next%20page_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="149.0" layoutY="36.0" text="Sign In" textFill="#9f202d">
+                     <font>
+                        <Font name="Sylfaen" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

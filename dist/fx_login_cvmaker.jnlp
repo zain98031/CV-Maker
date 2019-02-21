@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="fx_login_cvmaker.jnlp">
+  <information>
+    <title>fx_login_cvmaker</title>
+    <vendor>zain9</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="fx_login_cvmaker.jar" size="542394" download="eager" />
+    <jar href="lib/jfoenix-1.0.0.jar" size="2186636" download="eager" />
+    <jar href="lib/scenebuilder-kit-10.0.0.jar" size="2832053" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="fx_login_cvmaker" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fx_login_cvmaker.Fx_login_cvmaker"  name="fx_login_cvmaker" />
+  <update check="always"/>
+</jnlp>
